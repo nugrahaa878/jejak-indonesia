@@ -23,7 +23,10 @@ class _PageScaffoldState extends State<PageScaffold> {
       backgroundColor: Colors.white,
       body: SafeArea(child: widget.body),
       appBar: AppBar(
-        title: const Text('JejakIndonesia'),
+        title: const Text('JejakiIndonesia'),
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.deepPurple,
+        elevation: 0.1,
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const [

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:submission_1/src/features/Home/icon_text.dart';
+import 'package:submission_1/src/routes/routes.dart';
 
 class MenuIconSection extends StatelessWidget {
   const MenuIconSection({super.key});
@@ -15,7 +16,10 @@ class MenuIconSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconWithText(icon: Icons.map_rounded, text: 'Destinasi'),
-              IconWithText(icon: Icons.article_rounded, text: 'Blog'),
+              IconWithText(
+                  icon: Icons.article_rounded,
+                  text: 'Blog',
+                  path: Routes.detailChannel),
               IconWithText(
                   icon: Icons.airplane_ticket_rounded, text: 'Transportasi'),
               IconWithText(icon: Icons.event_available_rounded, text: 'Jadwal'),
