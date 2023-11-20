@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:submission_1/src/features/Home/banner.dart';
+import 'package:submission_1/src/features/Home/menu_icon.dart';
 import 'package:submission_1/src/features/Home/page_scaffold.dart';
 
 class Home extends StatelessWidget {
@@ -11,6 +12,7 @@ class Home extends StatelessWidget {
       body: Column(
         children: [
           BannerSection(),
+          MenuIconSection(),
         ],
       ),
     );
