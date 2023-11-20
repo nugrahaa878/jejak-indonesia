@@ -1,27 +1,14 @@
 import 'package:flutter/material.dart';
 
-class PageScaffold extends StatefulWidget {
+class PageScaffold extends StatelessWidget {
   final Widget body;
   const PageScaffold({super.key, required this.body});
-
-  @override
-  State<PageScaffold> createState() => _PageScaffoldState();
-}
-
-class _PageScaffoldState extends State<PageScaffold> {
-  int _selectedIndex = 0;
-
-  void _onTapItem(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SafeArea(child: widget.body),
+      body: SafeArea(child: body),
       appBar: AppBar(
         title: const Text('JejakIndonesia'),
       ),
@@ -40,8 +27,6 @@ class _PageScaffoldState extends State<PageScaffold> {
             label: 'Akun',
           ),
         ],
-        currentIndex: _selectedIndex,
-        onTap: _onTapItem,
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:submission_1/src/features/Home/banner.dart';
 import 'package:submission_1/src/features/Home/page_scaffold.dart';
 
 class Home extends StatelessWidget {
@@ -7,7 +8,11 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const PageScaffold(
-      body: Text('Home'),
+      body: Column(
+        children: [
+          BannerSection(),
+        ],
+      ),
     );
   }
 }
