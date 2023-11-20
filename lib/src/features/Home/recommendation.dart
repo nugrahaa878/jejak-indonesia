@@ -1,26 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:submission_1/src/features/Home/card_item.dart';
 
 class RecommendationSection extends StatelessWidget {
-  const RecommendationSection({super.key});
+  final List<String> listBannerImages;
+  final List<String> listLocationName;
+  final String channelName;
+
+  const RecommendationSection({
+    super.key,
+    required this.listBannerImages,
+    required this.listLocationName,
+    required this.channelName,
+  });
 
   @override
   Widget build(BuildContext context) {
-    List<String> bannerImages = [
-      'https://via.placeholder.com/150',
-      'https://via.placeholder.com/150',
-      'https://via.placeholder.com/150',
-      'https://via.placeholder.com/150',
-      'https://via.placeholder.com/150',
-    ];
-
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 40.0, horizontal: 16.0),
+      padding: const EdgeInsets.only(top: 40.0, left: 16.0, right: 16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'Rekomendasi Tempat Wisata',
-            style: TextStyle(
+          Text(
+            channelName,
+            style: const TextStyle(
               fontSize: 16.0,
               fontWeight: FontWeight.bold,
             ),
@@ -30,14 +32,13 @@ class RecommendationSection extends StatelessWidget {
             height: 130,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: bannerImages.length,
+              itemCount: listBannerImages.length,
               itemBuilder: (context, index) {
                 return Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Image.network(
-                    bannerImages[index],
-                    width: 150,
-                    fit: BoxFit.cover,
+                  child: CardItem(
+                    imgUrl: listBannerImages[index],
+                    name: listLocationName[index],
                   ),
                 );
               },
