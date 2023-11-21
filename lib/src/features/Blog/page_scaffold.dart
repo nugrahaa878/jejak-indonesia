@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class DetailChannelScaffold extends StatelessWidget {
+class BlogListScaffold extends StatelessWidget {
   final Widget body;
-  const DetailChannelScaffold({super.key, required this.body});
+  const BlogListScaffold({super.key, required this.body});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class DetailChannelScaffold extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SafeArea(child: body),
       appBar: AppBar(
-        title: const Text('Destinasi Wisata'),
+        title: const Text('Blog List'),
         backgroundColor: Colors.white,
         foregroundColor: Colors.deepOrange,
         elevation: 0.2,

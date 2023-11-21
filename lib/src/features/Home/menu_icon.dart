@@ -8,18 +8,23 @@ class MenuIconSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24.0),
+      padding: EdgeInsets.symmetric(horizontal: 12.0),
       child: Column(
         children: [
           SizedBox(height: 24.0),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              IconWithText(icon: Icons.map_rounded, text: 'Destinasi'),
               IconWithText(
-                  icon: Icons.article_rounded,
-                  text: 'Blog',
-                  path: Routes.detailChannel),
+                icon: Icons.map_rounded,
+                text: 'Destinasi',
+                path: Routes.detailChannel,
+              ),
+              IconWithText(
+                icon: Icons.article_rounded,
+                text: 'Blog',
+                path: Routes.blogList,
+              ),
               IconWithText(
                   icon: Icons.airplane_ticket_rounded, text: 'Transportasi'),
               IconWithText(icon: Icons.event_available_rounded, text: 'Jadwal'),
