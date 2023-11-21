@@ -10,9 +10,9 @@ class DetailChannelScaffold extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SafeArea(child: body),
       appBar: AppBar(
-        title: const Text('JejakIndonesia'),
         backgroundColor: Colors.white,
-        foregroundColor: Colors.deepPurple,
+        foregroundColor: Colors.deepOrange,
+        elevation: 0.2,
       ),
     );
   }

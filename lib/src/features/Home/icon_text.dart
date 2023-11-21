@@ -25,7 +25,7 @@ class IconWithText extends StatelessWidget {
         children: [
           Icon(
             icon,
-            color: Colors.deepPurple,
+            color: Colors.deepOrange,
             size: 40.0,
           ),
           const SizedBox(

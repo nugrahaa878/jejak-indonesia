@@ -10,7 +10,7 @@ class PageScaffold extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SafeArea(child: body),
       appBar: AppBar(
-        title: const Text('JejakIndonesia'),
+        title: const Text('Adventura'),
       ),
     );
   }

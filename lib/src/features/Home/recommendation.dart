@@ -51,7 +51,7 @@ class RecommendationSection extends StatelessWidget {
                   'Selengkapnya',
                   textAlign: TextAlign.end,
                   style: TextStyle(
-                    color: Colors.deepPurple,
+                    color: Colors.deepOrange,
                   ),
                 ),
               ),
